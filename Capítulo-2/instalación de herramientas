@@ -1,0 +1,8 @@
+2.1 Herramientas de Compilación
+sudo apt install build-essential libncurses-dev bison flex libssl-dev libelf-dev bc qemu-system-x86
+
+2.2 Herramientas para crear la ISO
+sudo apt install xorriso mtools grub-pc-bin grub-efi-amd64-bin dosfstools
+
+3. Estructura de directorios del proyecto
+mkdir -p $HOME/linux/{kernel,busybox,micro-linux}
