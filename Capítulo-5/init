@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# a. Montar sistemas de archivos virtuales
+
+# Para ver los procesos en ejecución.
+mount -t proc none /proc
+
+# Para ver y configurar el hardware.     
+mount -t sysfs none /sys   
+
+# Para acceder a teclado, pantalla y discos.    
+mount -t devtmpfs none /dev
+
+# b. Mensaje de bienvenida
+echo "---------------------------------------------"
+echo " ¡Bienvenido a Micro-Linux! "
+echo " Boot completado con éxito. "
+echo "---------------------------------------------"
+
+# c. Lanzar una shell interactiva
+exec /bin/sh
